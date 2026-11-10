@@ -1,0 +1,49 @@
+{
+  "name": "Agentic Distributed Systems (Java 21 / Spring)",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "true",
+      "installGradle": "false"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb",
+    "storage": "32gb"
+  },
+  "containerEnv": {
+    "MAVEN_OPTS": "-Xmx1g"
+  },
+  "forwardPorts": [8080, 8081, 8082, 8888, 8761],
+  "portsAttributes": {
+    "8080": { "label": "Service / Gateway" },
+    "8081": { "label": "Service 2" },
+    "8082": { "label": "Service 3" },
+    "8888": { "label": "Config Service" },
+    "8761": { "label": "Discovery (Eureka)" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-boot-dev-pack",
+        "humao.rest-client",
+        "GraphQL.vscode-graphql",
+        "GraphQL.vscode-graphql-syntax",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1500m -Xms100m",
+        "java.configuration.updateBuildConfiguration": "automatic",
+        "java.compile.nullAnalysis.mode": "disabled",
+        "files.exclude": { "**/target": true }
+      }
+    }
+  },
+  "postCreateCommand": "java -version && mvn -v && docker --version",
+  "remoteUser": "vscode"
+}
