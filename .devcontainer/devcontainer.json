@@ -40,7 +40,7 @@
         "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1500m -Xms100m",
         "java.configuration.updateBuildConfiguration": "automatic",
         "java.compile.nullAnalysis.mode": "disabled",
-        "files.exclude": { "**/target": true, "**/.claude": true }
+        "files.exclude": { "**/target": true }
       }
     }
   },

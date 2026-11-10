@@ -22,3 +22,8 @@ target/
 *.mv.db
 *.trace.db
 .env
+
+# Claude Code files (kept local, never pushed)
+.claude/
+CLAUDE.md
+CLAUDE.local.md
