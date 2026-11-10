@@ -1,0 +1,29 @@
+# Maven / Java
+target/
+*.class
+*.log
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.classpath
+.project
+.settings/
+.factorypath
+
+# OS
+.DS_Store
+
+# Local H2 file databases / secrets
+*.mv.db
+*.trace.db
+.env
+
+# Claude Code files (kept local, never pushed)
+.claude/
+CLAUDE.md
+CLAUDE.local.md
