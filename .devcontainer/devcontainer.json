@@ -1,6 +1,6 @@
 {
   "name": "Agentic Distributed Systems (Java 21 / Spring)",
-  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "build": { "dockerfile": "Dockerfile" },
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "none",
