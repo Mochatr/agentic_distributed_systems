@@ -34,7 +34,8 @@
         "humao.rest-client",
         "GraphQL.vscode-graphql",
         "GraphQL.vscode-graphql-syntax",
-        "ms-azuretools.vscode-docker"
+        "ms-azuretools.vscode-docker",
+        "bierner.markdown-mermaid"
       ],
       "settings": {
         "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1500m -Xms100m",

@@ -27,3 +27,6 @@ target/
 .claude/
 CLAUDE.md
 CLAUDE.local.md
+
+# Personal study notes (kept local, never pushed)
+notes/
